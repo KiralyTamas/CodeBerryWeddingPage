@@ -1,0 +1,335 @@
+* {
+	box-sizing: border-box;
+}
+@font-face {
+	font-family: Vibes;
+	src: url(/CodeBerryWeddingPage/Fonts/Vibes.ttf);
+}
+@font-face {
+	font-family: Libre;
+	src: url(/CodeBerryWeddingPage/Fonts/Libre.ttf);
+}
+@font-face {
+	font-family: Muli;
+	src: url(/CodeBerryWeddingPage/Fonts/Muli.ttf);
+}
+body {
+	background: url(/CodeBerryWeddingPage/assets/Light.png);
+}
+#header {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 425px;
+	height: 100vh;
+	background: url(/CodeBerryWeddingPage/assets/Cover.jpg) no-repeat 70% center/cover;
+	margin: 0 auto;
+}
+.glass {
+	position: relative;
+	display: block;
+	text-align: center;
+	width: 100%;
+	padding: 10px;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+.headtag,
+.cim,
+.foottag {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.headtag {
+	position: relative;
+	font-family: Libre;
+	font-size: 1.3rem;
+	letter-spacing: 2px;
+	font-weight: 200;
+	height: 25%;
+}
+.headtag::after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 0;
+	height: 1px;
+	width: 48%;
+	background-color: white;
+}
+.cim {
+	font-family: Vibes;
+	font-size: 3.2rem;
+	height: 50%;
+	color: #d2ba87;
+	margin: 1.5rem 0;
+	letter-spacing: 1px;
+}
+.foottag {
+	display: inline-block;
+	position: relative;
+	font-family: Libre;
+	font-size: 1.3rem;
+	letter-spacing: 2.5px;
+	height: 10%;
+}
+.foottag::before,
+.foottag::after {
+	content: "";
+	display: inline-block;
+	height: 1px;
+	width: 1.5rem;
+	vertical-align: middle;
+	margin: 0 0.5rem;
+	background-color: white;
+}
+.foottag::before {
+	left: 0;
+	top: 50%;
+}
+.foottag::after {
+	right: 0;
+	top: 50%;
+}
+@media (min-width: 768px) {
+	#header {
+		background: url(/CodeBerryWeddingPage/assets/Cover.jpg) no-repeat center/cover;
+		max-width: 100%;
+	}
+	.glass {
+		width: 50%;
+		height: auto;
+		padding: 20px;
+	}
+	.headtag {
+		text-transform: uppercase;
+		line-height: 2rem;
+		height: 16%;
+	}
+	.cim {
+		height: 77%;
+		font-size: 7rem;
+		line-height: 10rem;
+	}
+	.foottag {
+		width: 100%;
+		height: auto;
+	}
+}
+#location {
+	position: relative;
+	display: block;
+	max-width: 425px;
+	height: auto;
+	padding: 10px;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+	text-align: center;
+}
+.location {
+	display: block;
+	padding: 40px 0;
+	font-family: Vibes;
+	font-size: 3rem;
+}
+#location h1 {
+	font-family: Libre;
+	font-size: 1.5rem;
+	font-weight: 700;
+	letter-spacing: 1.5px;
+	color: #444349;
+	margin-bottom: 24px;
+}
+img {
+	height: 7.5rem;
+	margin-bottom: 24px;
+}
+#location p {
+	font-family: Muli;
+	font-size: 1.125rem;
+	margin-bottom: 10px;
+}
+.ceremony::after,
+.photos::after,
+.party::after {
+	content: "";
+	display: block;
+	margin: 1.5rem auto;
+	width: 25vw;
+	height: 3px;
+	background-color: #444349;
+}
+@media (min-width: 768px) {
+	#location {
+		max-width: 100vw;
+	}
+	.location {
+		margin-bottom: 4rem;
+		padding: 5px;
+	}
+	.photos {
+		margin: 0 2rem;
+	}
+	.lw {
+		display: inline-block;
+		width: 30%;
+		padding: 0 1.5rem;
+		margin: 0.5rem;
+	}
+	.ceremony::after,
+	.photos::after,
+	.party::after {
+		display: none;
+	}
+	ul{
+		padding: 0 5px;
+	}
+}
+#program {
+	position: relative;
+	display: block;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 0.5rem 1rem;
+	margin: 0 auto;
+}
+.program {
+	display: block;
+	position: relative;
+	text-align: center;
+	font-family: Vibes;
+	font-size: 3rem;
+	color: #d2ba87;
+	padding-top: 24px;
+	margin-bottom: 24px;
+}
+.content {
+	position: relative;
+	display: block;
+	margin: 0 0 40px 20px;
+	font-family: Muli;
+	font-size: 1.125rem;
+	color: #d2ba87;
+}
+@media (min-width: 768px) {
+	.content{
+	width: 30vw;
+	margin: 24px auto;
+	}
+}
+#program p {
+	font-style: italic;
+	margin-bottom: 30px;
+}
+#program ul {
+	line-height: 1.8rem;
+}
+#gifts {
+	position: relative;
+	display: block;
+	text-align: center;
+	margin: 1.5rem 0.6rem;
+	padding: 0 27px;
+	color: #444349;
+}
+.gifts {
+	font-family: Vibes;
+	font-size: 3rem;
+	margin: 40px;
+	color: #444349;
+}
+#gifts p {
+	font-family: Libre;
+	font-size: 1.1rem;
+	line-height: 1.5rem;
+	margin-bottom: 24px;
+}
+#qa {
+	position: relative;
+	display: block;
+	text-align: center;
+	background: rgba(0, 0, 0, 0.6);
+	padding: 0.5rem 1rem;
+	color: #d2ba87;
+}
+.qa h1 {
+	font-family: Vibes, cursive;
+	margin: 16px 0 24px;
+	font-size: 3rem;
+}
+.qg p {
+	font-family: Muli;
+	font-size: 1.125rem;
+	text-align: left;
+	line-height: 1.8rem;
+	margin-bottom: 1.5rem;
+}
+.qg h2 {
+	font-family: Libre;
+	font-size: 1.5rem;
+	margin: 0 0 24px 0;
+}
+.qg .strong {
+	font-family: Muli, sans-serif;
+	font-size: 1.125rem;
+	font-weight: 700;
+	letter-spacing: 0.3px;
+	margin-bottom: 0.5rem;
+}
+a {
+	text-decoration: block;
+	color: #bd806e;
+}
+a:hover {
+	color: #eda087;
+}
+.qg::after {
+	content: "";
+	display: block;
+	margin: 1.5rem auto;
+	width: 50vw;
+	height: 3px;
+	background-color: #d2ba87;
+}
+@media (min-width: 768px){
+	.qg{
+		display: inline-block;
+		width: 30%;
+		vertical-align: top;
+		text-align: left;
+		margin: 0.5rem;
+		padding: 1.5rem;
+		line-height: 2.5rem;
+	}
+	.qg::after{
+		display: none;
+	}
+}
+#contact {
+	text-align: center;
+	padding: 0 20px;
+}
+#contact h2 {
+	font-family: Vibes;
+	font-size: 3rem;
+	margin: 30px 0;
+}
+#contact p {
+	font-family: Libre;
+	font-size: 1.125rem;
+	line-height: 1.8rem;
+	margin-bottom: 1.5rem;
+}
+#footer {
+	display: block;
+	position: relative;
+	background: rgba(0, 0, 0, 0.6);
+	text-align: center;
+	color: white;
+	font-family: Muli;
+	font-size: 0.9rem;
+	line-height: 1.4rem;
+	padding: 30px 20px;
+}
